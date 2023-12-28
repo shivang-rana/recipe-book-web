@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Recipe Book</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="recipes.html">All Recipes</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <li><span class="profile-button " onclick="openLoginForm()">Login
+                    <span class="tooltiptext">LOGIN TO MANAGE RECIPES</span>
+                </span></li>
+
+
+        </ul>
+    </nav>
+
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 style="align-content: center;">Login</h2>
+            <p id="result"></p>
+            <form id="loginForm" action="#">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="username">Username:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="username" name="username">
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password" name="password">
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center; border-radius: 5px;"> <button type="submit"
+                                onclick="handleLogin()">Login</button></td>
+                    </tr>
+
+                </table>
+
+            </form>
+
+            <p>Don't have an account? <a href="#" onclick="openRegisterForm()">Register here</a></p>
+        </div>
+    </div>
+
+
+    <section id="home-rec1">
+        <h2 class="sechead">Featured Recipes</h2>
+        <div class="homecard" style="background-image: url('images/paneer.jpg');">
+            <div class="overlay"></div>
+            <h3>Paneer Tikka</h3>
+            <p>Discover the amazing flavors of this featured recipe.</p>
+            <!-- <a href="#">View Recipe</a> -->
+        </div>
+
+        <div class="homecard" style="background-image: url('images/dhossa.jpg');">
+            <div class="overlay"></div>
+            <h3>Masala dhosa</h3>
+            <p>Indulge in the goodness of this mouthwatering recipe.</p>
+            <!-- <a href="#">View Recipe</a> -->
+        </div>
+
+        <div class="homecard" style="background-image: url('images/paneerp.jpg');">
+            <div class="overlay"></div>
+            <h3>Palak paneer</h3>
+            <p>Experience a burst of flavors in every bite.</p>
+            <!-- <a href="#">View Recipe</a> -->
+        </div>
+
+    </section>
+
+    <section id="all-time-favorites">
+        <h2 class="sechead">All-Time Favorites</h2>
+        <div class="homecard" style="background-image: url('images/Veg-Pullav.jpg');">
+            <div class="overlay"></div>
+            <h3>Veg-Pullav</h3>
+            <p>Discover the amazing flavors of this featured recipe.</p>
+            <!-- <a href="#">View Recipe</a> -->
+        </div>
+
+        <div class="homecard" style="background-image: url('images/pavbhaji.jpg');">
+            <div class="overlay"></div>
+            <h3>Pav-bhaji</h3>
+            <p>Indulge in the goodness of this mouthwatering recipe.</p>
+            <!-- <a href="#">View Recipe</a> -->
+        </div>
+
+        <div class="homecard" style="background-image: url('images/dal-tadka.jpg');">
+            <div class="overlay"></div>
+            <h3>Dal-tadka</h3>
+            <p>Experience a burst of flavors in every bite.</p>
+            <!-- <a href="#">View Recipe</a> -->
+        </div>
+    </section>
+
+    <section id="seasonal-flavors">
+        <h2 class="sechead">Seasonal Flavours</h2>
+        <div class="homecard" style="background-image: url('images/Baingan\ Bharta.jpeg');">
+            <div class="overlay"></div>
+            <h3>Baingan-Bharat</h3>
+            <p>Discover the amazing flavors of this featured recipe.</p>
+            <!-- <a href="#">View Recipe</a> -->
+        </div>
+
+        <div class="homecard"
+            style="background-image: url('images/Moong\ Dal\ Khichdi\ Recipe\ \(Healthy\ &\ Tasty\).jpeg');">
+            <div class="overlay"></div>
+            <h3>Moong-Dal Khichdi</h3>
+            <p>Indulge in the goodness of this mouthwatering recipe.</p>
+            <!-- <a href="#">View Recipe</a> -->
+        </div>
+
+        <div class="homecard" style="background-image: url('images/gaajar.jpeg');">
+            <div class="overlay"></div>
+            <h3>Gajar ka halva</h3>
+            <p>Experience a burst of flavors in every bite.</p>
+            <!-- <a href="#">View Recipe</a> -->
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+
+                <p>Your Recipe Book is your go-to source for delicious and diverse recipes. Explore the world of flavors
+                    with us!</p>
+            </div>
+            <div class="footer-section contact">
+
+                <p>Email: shivang123@gmail.com</p>
+                <p>Phone: 7575757575</p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Your Recipe Book. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Recipes</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            background: url('images/headerr.jpg') center/cover;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        head h1 {
+            color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 50px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ffd700;
+        }
+
+
+        /* Responsive Design */
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                text-align: center;
+                display: block;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        .logo {
+            font-size: 1.5em;
+        }
+
+
+        .manage-recipes {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h2,
+        h3 {
+            color: #fbfbfb;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        textarea,
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> Manage-recipes</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">All Recipes</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="manage-recipes">
+        <h2>Manage Recipes</h2>
+
+        <!-- Recipe List -->
+        <ul id="recipeList">
+        </ul>
+
+        <!-- Add Recipe Form -->
+        <h3>Add New Recipe</h3>
+        <form id="addRecipeForm">
+
+            <label for="recipeName">Recipe Name:</label>
+            <input type="text" id="recipeName" name="recipeName" required>
+
+            <label for="recipeIngredients">Ingredients:</label>
+            <textarea id="recipeIngredients" name="recipeIngredients" rows="4" required></textarea>
+
+            <label for="recipeInstructions">Instructions:</label>
+            <textarea id="recipeInstructions" name="recipeInstructions" rows="6" required></textarea>
+
+            <label for="recipeimage">Choose Recipe Image:</label>
+            <input type="file" name="image" id="image">
+
+
+            <button type="submit">Add Recipe</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+
+                <p>Your Recipe Book is your go-to source for delicious and diverse recipes. Explore the world of flavors
+                    with us!</p>
+            </div>
+            <div class="footer-section contact">
+
+                <p>Email: shivang123@gmail.com</p>
+                <p>Phone: 7575757575</p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Your Recipe Book. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
